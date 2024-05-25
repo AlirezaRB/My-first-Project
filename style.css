@@ -211,6 +211,12 @@ html {
     color: #f29f96;
 }
 
+@media (max-width: 500px) {
+    .menu-list-items {
+        font-size: 1rem;
+    }
+}
+
 @media (min-width: 1010px) {
     .navbar-container {
         grid-template-columns: 70px 50px 50% 155px;
