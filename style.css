@@ -64,13 +64,12 @@ html {
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 30vh;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .menu-list-items li {
     border-bottom: 1px solid #919191;
+    margin-bottom: .7em;
     transition: all .5s;
 }
 
