@@ -1,3 +1,28 @@
+//  Navbar
+
+document.querySelector('.nav-search-input').addEventListener("keyup", function(e) {
+    let searchQuery = e.target.value.toLowerCase()
+    let articleDomCollection = document.getElementsByClassName('article')
+    
+
+    for (let i = 0; i < articleDomCollection.length; i++) {
+        const currentarticle = articleDomCollection[i].textContent.toLocaleLowerCase()
+
+        if (currentarticle.includes(searchQuery) === false) {
+            articleDomCollection[i].classList.add("hidden")
+            articleDomCollection[i].classList.remove("visible")
+        } else {
+            articleDomCollection[i].classList.remove("hidden")
+            articleDomCollection[i].classList.add("visible")
+        }
+    }
+})
+
+
+
+
+
+
 // Carousel 
 
 const slides = document.getElementsByClassName("carousel-item")
