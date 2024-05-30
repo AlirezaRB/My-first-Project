@@ -204,6 +204,7 @@ html {
     border-radius: 8px;
     color: white;
     transition: .5s;
+    cursor: pointer;
 }
 
 .nav-search-icon a i:hover {
@@ -417,8 +418,12 @@ html {
 
 /* Article/Section 2/3/4 */
 
+.visible {
+    display: block;
+}
+
 .article {
-    width: 92%;
+    width: 90%;
     margin: 0 auto;
     
 }
@@ -459,6 +464,7 @@ html {
 }
 
 @media (min-width: 750px) {
+
     .article {
         display: flex;
         flex-direction: row;
@@ -591,3 +597,7 @@ footer a:hover {
     90% {transform: rotate(2deg);}
     100% {transform: rotate(0deg);}
  }
+
+ .hidden {
+    display: none;
+}
